@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. CẤU HÌNH MÀU SẮC (LIGHT/DARK MODE) */
+:root {
+  --gaming-bg: #f0f2f5;
+  --gaming-card: #ffffff;
+  --gaming-border: #cbd5e1;
+  --gaming-primary: #3b82f6;
+  --gaming-text: #1e293b;
+  --gaming-muted: #64748b;
+}
+
+.dark {
+  --gaming-bg: #0f172a;
+  --gaming-card: #1e293b;
+  --gaming-border: #334155;
+  --gaming-primary: #3b82f6;
+  --gaming-text: #f1f5f9;
+  --gaming-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--gaming-bg);
+  color: var(--gaming-text);
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Chặn thanh cuộn thừa của toàn trang */
+}
+
+/* 2. ĐỊNH NGHĨA CLASS NÚT BẤM (Sửa lỗi mất nút) */
+@layer components {
+  .btn-action {
+    @apply flex items-center justify-center gap-1 text-xs py-2 rounded text-white transition-all shadow-sm hover:opacity-90 active:scale-95;
+  }
+}
+
+/* 3. TÙY CHỈNH THANH CUỘN (SCROLLBAR) CHO ĐẸP */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Fix lỗi safe-area trên iPhone đời mới */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
