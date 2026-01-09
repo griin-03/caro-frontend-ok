@@ -5,10 +5,11 @@ import DashboardPage from './pages/Dashboard/DashboardPage';
 import GamePage from './pages/Game/GamePage';
 import AboutPage from './pages/Dashboard/AboutPage'; 
 import SettingsPage from './pages/Dashboard/SettingsPage'; 
-
-// --- MỚI THÊM IMPORT TRANG FEEDBACK ---
 import FeedbackPage from './pages/Dashboard/FeedbackPage';
-// --------------------------------------
+import CommunityPage from './pages/Dashboard/CommunityPage';
+// --- MỚI THÊM: IMPORT TRANG SHOP VỪA TẠO ---
+import ShopPage from './pages/Shop/ShopPage'; 
+// -------------------------------------------
 
 function App() {
   return (
@@ -25,14 +26,13 @@ function App() {
         
         <Route path="about" element={<AboutPage />} />
         <Route path="settings" element={<SettingsPage />} /> 
-
-        {/* --- MỚI THÊM ROUTE FEEDBACK --- */}
         <Route path="feedback" element={<FeedbackPage />} />
-        {/* ------------------------------- */}
 
-        <Route path="shop" element={<div className="text-white p-10">Shop (Coming Soon)</div>} />
-        <Route path="forum" element={<div className="text-white p-10">Forum (Coming Soon)</div>} />
-      </Route>
+        {/* --- ĐÃ SỬA: THAY PLACEHOLDER BẰNG TRANG SHOP THẬT --- */}
+        <Route path="shop" element={<ShopPage />} />
+        {/* ----------------------------------------------------- */}
+
+        <Route path="forum" element={<CommunityPage />} />      </Route>
     </Routes>
   );
 }

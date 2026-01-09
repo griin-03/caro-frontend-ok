@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { User, Lock, Volume2, Shield, Camera, Trash2, CloudUpload } from 'lucide-react';
 
 // --- CẤU HÌNH LINK SERVER RENDER (Quan trọng) ---
-const API_BASE = 'https://caro-backend-pro.onrender.com';
+const API_BASE = 'http://localhost:8080';
 // ------------------------------------------------
 
 const SettingsPage = () => {
