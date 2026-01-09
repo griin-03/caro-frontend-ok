@@ -35,8 +35,8 @@ const AuthPage = () => {
         try {
             if (isLogin) {
                 // 1. GỌI API ĐĂNG NHẬP
-                const response = await axios.post('http://localhost:8080/api/auth/login', {
-                    username: formData.username,
+                const response = await axios.post('https://caro-backend-pro.onrender.com/api/auth/login', {
+                                        username: formData.username,
                     password: formData.password
                 });
 
@@ -58,8 +58,7 @@ const AuthPage = () => {
                 }
 
                 // Gửi đúng các trường mà Backend (User.java) yêu cầu
-                const response = await axios.post('http://localhost:8080/api/auth/register', {
-                    username: formData.username,
+                const response = await axios.post('https://caro-backend-pro.onrender.com/api/auth/register', {                    username: formData.username,
                     password: formData.password,
                     fullName: formData.fullName,
                     email: formData.email
