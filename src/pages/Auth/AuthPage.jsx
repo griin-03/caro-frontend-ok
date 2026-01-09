@@ -40,7 +40,6 @@ const AuthPage = () => {
                     password: formData.password
                 });
 
-                // Nếu thành công:
                 console.log("Đăng nhập thành công:", response.data);
                 
                 // Lưu thông tin user vào bộ nhớ trình duyệt
