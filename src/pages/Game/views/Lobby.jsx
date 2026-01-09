@@ -86,7 +86,7 @@ const Lobby = ({ user, roomList = [], onJoinGame }) => {
                     <Zap className="text-yellow-300 fill-current animate-pulse"/> Đấu Trường Online
                 </h3>
                 <p className="text-blue-100 text-sm mb-6 max-w-[80%]">
-                    Tìm đối thủ xứng tầm. Leo rank thời gian thực.
+                    LƯU Ý: 1. NẾU ẤN TẠO SERVER LỖI THÌ ĐỢI 2-3 PHÚT CHO SERVER KHỞI ĐỘNG NHÉ! SERVER SẼ TỰ NGỦ KHI KHÔNG CÓ NGƯỜI CHƠI! 2. LÀ PHẢI CÓ BẠN BÈ DÙNG LINK WEB NÀY Ở MÁY KHÁC THÌ SẼ CHƠI ONLINE CÙNG NHAU ĐƯỢC NHÉ Ạ. ẤN ĐỂ TẠO PHÒNG
                 </p>
                 
                 {/* NÚT TẠO PHÒNG PVP - LOGIC CŨ 100% */}

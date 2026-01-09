@@ -27,7 +27,9 @@ const ShopPage = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/api/shop/items');
+       // const res = await axios.get('http://localhost:8080/api/shop/items');
+        // Thay localhost:8080 bằng link Render của bạn:
+const res = await axios.get('https://caro-backend-pro.onrender.com/api/shop/items');
         setItems(res.data);
       } catch (err) {
         console.error("Lỗi tải shop:", err);
