@@ -12,8 +12,8 @@ import ProfessionalBoard from '../../components/game/GameBoard';
 import { Avatar, ResultToast, MenuModal, ConfirmDialog } from '../../components/game/GameUI';
 
 // Cấu hình Socket
-// const WS_URL = 'wss://caro-backend-pro.onrender.com/ws/websocket';
-const WS_URL = 'ws://localhost:8080/ws/websocket';
+ const WS_URL = 'wss://caro-backend-pro.onrender.com/ws/websocket';
+// const WS_URL = 'ws://localhost:8080/ws/websocket';
 
 const GamePage = () => {
     // === 1. STATE USER & CONFIG ===
